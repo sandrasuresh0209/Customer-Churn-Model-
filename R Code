@@ -116,7 +116,7 @@ prop.table(table(testing_data$churn)
 LogModel <- glm(churn ~., data = training_data, family = "binomial")
 summary(LogModel)
 
-#Create linear regression model 
+#Create log regression model 
 LogModel <- glm(formula = churn ~ credit_score + country + gender + age + balance + products_number + active_member, family = "binomial", data = training_data)
 summary(LogModel)
 
